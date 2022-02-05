@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Profile from "./Profile";
+import Projects from "./Projects";
+import "./styles/App.scss";
+import React, { useState, useEffect } from "react";
 
-function App() {
+import Skills from "./Skills";
+const App = () => {
+  // const classes = useStyles();
+  // const { body, gridItem, gridLayout } = classes;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Profile />
+
+      <Projects />
+      <Projects />
     </div>
   );
-}
+};
 
 export default App;

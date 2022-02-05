@@ -1,0 +1,59 @@
+@import "globalStyles.scss";
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: $secondary-font;
+
+  color: white;
+  margin: 20px;
+}
+
+div > h1,
+h2 {
+  margin: 30px;
+  width: 50vw;
+  z-index: 8;
+  animation: unblur ease-in 5s 0s 1;
+}
+
+h1 {
+  font-family: $primary-font;
+  font-size: 4vw;
+  word-spacing: 10px;
+  font-weight: 100;
+  text-shadow: $text-shadow;
+}
+
+h2 {
+  font-size: calc(1.2vw + 0.9vh);
+  text-shadow: $text-shadow;
+  line-height: 1.2;
+}
+
+.profile-pic {
+  width: 24vw;
+  border-radius: 50%;
+  animation: enter 2s 0s 1;
+  box-shadow: $box-shadow;
+}
+
+@keyframes unblur {
+  from {
+    text-shadow: 0 0 8px white;
+  }
+  to {
+    text-shadow: 0;
+  }
+}
+
+@keyframes enter {
+  from {
+    filter: blur(3px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
