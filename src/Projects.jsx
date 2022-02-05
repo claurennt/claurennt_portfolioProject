@@ -4,10 +4,10 @@ import ToggleButton from "./Components/ToggleButton";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import alien from "./assets/alien.png";
-import github from "./assets/github.png";
-import netlify from "./assets/netlify.png";
-import heroku from "./assets/heroku.svg";
+// import alien from "./assets/alien.png";
+// import github from "./assets/github.png";
+// import netlify from "./assets/netlify.png";
+// import heroku from "./assets/heroku.svg";
 import projects from "./data";
 import "./styles/Projects.scss";
 

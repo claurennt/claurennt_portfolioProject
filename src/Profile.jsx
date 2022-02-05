@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles/Profile.scss";
 import me from "./assets/me.png";
-import linkedin from "./assets/linkedin.png";
-import github from "./assets/github_logo.png";
+// import linkedin from "./assets/linkedin.png";
+// import github from "./assets/github_logo.png";
 
 const Profile = () => (
   <div className="profile">
