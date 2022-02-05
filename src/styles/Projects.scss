@@ -1,0 +1,36 @@
+@import "globalStyles.scss";
+@import "customBootstrap.scss";
+.projects {
+  @include display-custom(column, center, center);
+
+  margin: 30px;
+}
+.btn-primary {
+  @include button-variant(black, #e900ff, $primary-font);
+}
+.project-card-wrapper {
+  box-shadow: 0 0 0 1px #e900ff, 0 0 0 2px #392061;
+  @include display-custom(column, center, center);
+  margin-top: 20px;
+  width: 350px;
+  height: 200px;
+  font-family: $primary-font;
+  color: $pink;
+  background-color: black;
+}
+.project-name {
+  font-family: $primary-font;
+  text-shadow: $text-shadow;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 4;
+}
+
+.project-preview {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.btn-outline-primary {
+  @include button-variant(black, $pink, $primary-font, $pink);
+}
