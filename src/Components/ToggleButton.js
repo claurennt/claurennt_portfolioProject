@@ -7,9 +7,9 @@ const ToggleButton = ({ children, btnText }) => {
   const [show, toggle] = useState(false);
   btnText = btnText.toLowerCase();
   return (
-    <>
+    <div className="text-center ">
       <Button
-        className="btn-primary"
+        className="btn-primary w-25"
         onClick={() => toggle(!show)}
         aria-controls={btnText}
         aria-expanded={show}
@@ -17,7 +17,7 @@ const ToggleButton = ({ children, btnText }) => {
         {btnText}
       </Button>
       <Fade in={show}>{children}</Fade>
-    </>
+    </div>
   );
 };
 export default ToggleButton;

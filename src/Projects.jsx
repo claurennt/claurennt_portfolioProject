@@ -8,7 +8,7 @@ import Container from "react-bootstrap/Container";
 // import github from "./assets/github.png";
 // import netlify from "./assets/netlify.png";
 // import heroku from "./assets/heroku.svg";
-import projects from "./data";
+import { projects } from "./data";
 import "./styles/Projects.scss";
 
 const Projects = () => (

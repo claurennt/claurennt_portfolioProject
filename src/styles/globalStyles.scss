@@ -15,7 +15,3 @@ $text-shadow-title: 2px 2px 0px $neon-purple, 4px 4px 0px $neon-purple,
   align-items: $align;
   justify-content: $justify;
 }
-
-@mixin smooth-toggle {
-  transition: 5s ease-in-out;
-}

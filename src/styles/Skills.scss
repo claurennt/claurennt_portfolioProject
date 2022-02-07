@@ -1,0 +1,60 @@
+@import "globalStyles.scss";
+@import "customBootstrap.scss";
+
+.skills {
+  @include display-custom(row, center, center);
+  margin-top: 100px;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.skills img {
+  width: 100px;
+  margin: 10px 2px;
+}
+.skill-name {
+  color: white;
+  margin-top: 20px;
+  font-family: $primary-font;
+}
+.btn-primary {
+  @include button-variant(
+    black,
+    $neon-purple,
+    $primary-font,
+    1.2rem,
+    $neon-purple
+  );
+}
+.project-card-wrapper {
+  @include display-custom(column, center, space-between);
+  margin-top: 20px;
+  width: 350px;
+  height: 200px;
+  font-family: $primary-font;
+  color: $neon-purple;
+  background-color: black;
+  border: 1px solid $neon-purple;
+}
+.project-name {
+  font-family: $primary-font;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: black;
+}
+
+.project-preview {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.btn-outline-primary {
+  @include button-variant(
+    black,
+    $neon-purple,
+    $primary-font,
+    1.2rem,
+    $neon-purple
+  );
+}

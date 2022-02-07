@@ -3,7 +3,7 @@ import Projects from "./Projects";
 import "./styles/App.scss";
 import React from "react";
 
-// import Skills from "./Skills";
+import Skills from "./Skills";
 const App = () => {
   // const classes = useStyles();
   // const { body, gridItem, gridLayout } = classes;
@@ -13,7 +13,7 @@ const App = () => {
       <Profile />
 
       <Projects />
-      <Projects />
+      <Skills />
     </div>
   );
 };
