@@ -1,6 +1,7 @@
 import rocket from "./assets/rocket.png";
 import bot from "./assets/bot.png";
 import optimist from "./assets/optimist.png";
+import hnClone from "./assets/hnClone.png";
 const projects = [
   {
     name: "Discord Backup BOT",
@@ -8,36 +9,37 @@ const projects = [
     image: bot,
   },
   {
-    name: "The Rocket Coder (Front-end)",
-    netlify: "https://the-rocket-coder.netlify.app/",
-    github: "https://github.com/claurennt/the_rocket_coder_frontend",
+    name: "The Rocket Coder",
+    github: "https://github.com/claurennt/merceria-shop-backend",
     image: rocket,
   },
   {
-    name: "The Rocket Coder (Back-end)",
-    heroku: "https://rocket-coder-backend.herokuapp.com/",
-    github: "https://github.com/claurennt/the_rocket_coder_backend",
+    name: "Merceria Shop (Back-end)",
+    github: "https://github.com/claurennt/the_rocket_coder_frontend",
+    netlify: "https://the-rocket-coder.netlify.app/",
   },
   {
     name: "Expressful Blog (Front-end)",
-    netlify: "https://expressful-blog-frontend.netlify.app/home",
     github: "https://github.com/claurennt/expressful_blog_frontend",
+    netlify: "https://expressful-blog-frontend.netlify.app/home",
     image: optimist,
   },
   {
     name: "Expressful Blog (Back-end)",
+    github: "https://github.com/claurennt/expressful_blog_backend/",
     heroku: "https://expressful-blog-backend.herokuapp.com/",
   },
   {
     name: "Small Hacker News Clone",
+    github: "https://github.com/claurennt/hacker_news_clone",
     netlify: "https://react-hn-clone-claurennt.netlify.app/",
-    github: "https://github.com/claurennt/expressful_blog_backend",
+    image: hnClone,
   },
 
   {
     name: "React ToDo List",
-    netlify: "https://react-todo-groupproject.netlify.app/",
     github: "https://github.com/claurennt/react-to-do-list",
+    netlify: "https://react-todo-groupproject.netlify.app/",
   },
 ];
 export default projects;
