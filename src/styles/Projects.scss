@@ -6,24 +6,31 @@
   margin: 30px;
 }
 .btn-primary {
-  @include button-variant(black, #e900ff, $primary-font);
+  @include button-variant(
+    black,
+    $neon-purple,
+    $primary-font,
+    1.2rem,
+    $neon-purple
+  );
 }
 .project-card-wrapper {
-  box-shadow: 0 0 0 1px #e900ff, 0 0 0 2px #392061;
-  @include display-custom(column, center, center);
+  @include display-custom(column, center, space-between);
   margin-top: 20px;
   width: 350px;
   height: 200px;
   font-family: $primary-font;
-  color: $pink;
+  color: $neon-purple;
   background-color: black;
+  border: 1px solid $neon-purple;
 }
 .project-name {
   font-family: $primary-font;
-  text-shadow: $text-shadow;
   font-size: 25px;
   font-weight: 700;
-  line-height: 4;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: black;
 }
 
 .project-preview {
@@ -32,5 +39,11 @@
 }
 
 .btn-outline-primary {
-  @include button-variant(black, $pink, $primary-font, $pink);
+  @include button-variant(
+    black,
+    $neon-purple,
+    $primary-font,
+    1.2rem,
+    $neon-purple
+  );
 }

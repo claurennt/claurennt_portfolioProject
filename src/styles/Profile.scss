@@ -6,9 +6,8 @@
   align-items: center;
   justify-content: center;
   font-family: $secondary-font;
-
+  margin: 2%;
   color: white;
-  margin: 20px;
 }
 
 div > h1,
@@ -24,20 +23,19 @@ h1 {
   font-size: 4vw;
   word-spacing: 10px;
   font-weight: 100;
-  text-shadow: $text-shadow;
+  text-shadow: $text-shadow-title;
 }
 
 h2 {
   font-size: calc(1.2vw + 0.9vh);
-  text-shadow: $text-shadow;
+  color: $neon-purple;
   line-height: 1.2;
 }
 
 .profile-pic {
   width: 24vw;
   border-radius: 50%;
-  animation: enter 2s 0s 1;
-  box-shadow: $box-shadow;
+  animation: enter 1s 0s 1;
 }
 
 @keyframes unblur {
@@ -55,5 +53,13 @@ h2 {
   }
   to {
     filter: blur(0);
+  }
+}
+
+$layout-breakpoint-small: 960px;
+
+@media (min-width: $layout-breakpoint-small) {
+  .hide-extra-small {
+    display: none;
   }
 }

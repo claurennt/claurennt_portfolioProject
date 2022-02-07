@@ -2,12 +2,13 @@
   $background,
   $color,
   $font-family,
+  $font-size,
   $hoverBorderColor: ""
 ) {
   background-color: $background;
   border: 1px solid $color;
   color: $color;
-  font-family: $font-family;
+  font: $font-size $font-family;
 
   &:hover,
   &:active,

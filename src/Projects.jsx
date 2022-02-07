@@ -27,17 +27,21 @@ const Projects = () => (
                     backgroundSize: "cover",
                   }}
                 >
-                  {index !== 3 ? (
+                  {index !== 3 && (
                     <h3 className="project-name shadow-l">{name}</h3>
-                  ) : (
-                    <h3 className="project-name shadow-l mt-4">Front-end</h3>
                   )}
-                  <div className="d-flex flex-row ">
+                  <div
+                    className={`d-flex flex-row  ${
+                      index !== 3
+                        ? "justify-content-between"
+                        : "h-100 align-items-end"
+                    } `}
+                  >
                     <a
                       href={github}
                       target="_blank"
                       rel="noreferrer"
-                      className="btn btn-outline-primary mx-4"
+                      className="btn btn-outline-primary mx-4 py-1"
                     >
                       Code
                     </a>
@@ -46,7 +50,7 @@ const Projects = () => (
                         href={netlify ?? heroku}
                         target="_blank"
                         rel="noreferrer"
-                        className="btn btn-outline-primary mx-4"
+                        className="btn btn-outline-primary mx-4 py-1"
                       >
                         Live
                       </a>
