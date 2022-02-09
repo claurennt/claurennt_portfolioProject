@@ -56,10 +56,14 @@ h2 {
   }
 }
 
-$layout-breakpoint-small: 960px;
-
-@media (min-width: $layout-breakpoint-small) {
-  .hide-extra-small {
-    display: none;
+@media (max-width: 1000px) {
+  .profile {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 7vw;
+  }
+  img {
+    flex: 0 0 50%;
   }
 }

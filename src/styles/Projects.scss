@@ -1,10 +1,21 @@
 @import "globalStyles.scss";
 @import "customBootstrap.scss";
-.projects {
-  @include display-custom(column, center, center);
 
-  margin: 30px;
+@include custom-scrollbar(".projects");
+@include horizontal-scroll(".projects");
+
+.projects {
+  @include display-custom(row, center, "");
 }
+
+.projects > * {
+  float: none;
+  height: 90%;
+
+  display: inline-block;
+  zoom: 1;
+}
+
 .btn-primary {
   @include button-variant(
     black,
@@ -17,7 +28,7 @@
 .project-card-wrapper {
   @include display-custom(column, center, space-between);
   margin-top: 20px;
-  width: 350px;
+  width: 360px;
   height: 200px;
   font-family: $primary-font;
   color: $neon-purple;
@@ -39,11 +50,5 @@
 }
 
 .btn-outline-primary {
-  @include button-variant(
-    black,
-    $neon-purple,
-    $primary-font,
-    1.2rem,
-    $neon-purple
-  );
+  @include button-variant(black, $neon-purple, $primary-font, 1.2rem, white);
 }
