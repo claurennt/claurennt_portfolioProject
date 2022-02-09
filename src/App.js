@@ -11,9 +11,8 @@ const App = () => {
   return (
     <div className="app">
       <Profile />
-
-      <Projects />
       <Skills />
+      <Projects />
     </div>
   );
 };

@@ -1,9 +1,5 @@
 import React from "react";
-
-import ToggleButton from "./Components/ToggleButton";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
+import Fade from "react-bootstrap/Fade";
 // import alien from "./assets/alien.png";
 // import github from "./assets/github.png";
 // import netlify from "./assets/netlify.png";
@@ -12,58 +8,45 @@ import { projects } from "./data";
 import "./styles/Projects.scss";
 
 const Projects = () => (
-  <ToggleButton btnText="Projects">
-    <Container>
-      <div id="projects" className="projects">
-        <Row>
-          {" "}
-          {projects.map(({ image, name, github, netlify, heroku }, index) => {
-            return (
-              <Col lg={4} sm={12} key={index}>
-                <div
-                  className="project-card-wrapper"
-                  style={{
-                    backgroundImage: `url(${image}`,
-                    backgroundSize: "cover",
-                  }}
-                >
-                  {index !== 3 && (
-                    <h3 className="project-name shadow-l">{name}</h3>
-                  )}
-                  <div
-                    className={`d-flex flex-row  ${
-                      index !== 3
-                        ? "justify-content-between"
-                        : "h-100 align-items-end"
-                    } `}
-                  >
-                    <a
-                      href={github}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="btn btn-outline-primary mx-4 py-1"
-                    >
-                      Code
-                    </a>
-                    {(netlify || heroku) && (
-                      <a
-                        href={netlify ?? heroku}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="btn btn-outline-primary mx-4 py-1"
-                      >
-                        Live
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </Col>
-            );
-          })}
-        </Row>
-      </div>
-    </Container>
-  </ToggleButton>
+  <div id="projects" className="projects">
+    {projects.map(({ image, name, github, netlify, heroku }, index) => {
+      return (
+        <div
+          className="project-card-wrapper"
+          style={{
+            backgroundImage: `url(${image}`,
+            backgroundSize: "cover",
+          }}
+        >
+          {index !== 3 && <h3 className="project-name shadow-l">{name}</h3>}
+          <div
+            className={`d-flex flex-row  ${
+              index !== 3 ? "justify-content-between" : "h-100 align-items-end"
+            } `}
+          >
+            <a
+              href={github}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-outline-primary mx-4 py-1"
+            >
+              Code
+            </a>
+            {(netlify || heroku) && (
+              <a
+                href={netlify ?? heroku}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-outline-primary mx-4 py-1"
+              >
+                Live
+              </a>
+            )}
+          </div>
+        </div>
+      );
+    })}
+  </div>
 );
 
 export default Projects;

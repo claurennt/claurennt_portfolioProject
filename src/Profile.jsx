@@ -23,7 +23,7 @@ const Profile = () => (
  
         <img src={github} alt="linkedin" /> */}
     </div>
-    <img src={me} alt="profile" className="profile-pic" />{" "}
+    <img src={me} alt="profile" id="img" className="profile-pic" />{" "}
   </div>
 );
 export default Profile;

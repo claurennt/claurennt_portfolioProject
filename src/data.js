@@ -8,6 +8,7 @@ import css from "./assets/icons/css.png";
 import express from "./assets/icons/express.png";
 import node from "./assets/icons/node.png";
 import mongodb from "./assets/icons/mongodb.png";
+import mongoose from "./assets/icons/mongoose-.svg";
 import js from "./assets/icons/js.png";
 import mui from "./assets/icons/mui.png";
 import bootstrap from "./assets/icons/bootstrap.png";
@@ -78,7 +79,7 @@ const skills = {
     { name: "ExpressJS", image: express },
     { name: "PostgreSQL", image: postgre },
     { name: "MongoDB", image: mongodb },
-    { name: "mongoose" },
+    { name: "mongoose", image: mongoose },
     { name: "C", image: c },
   ],
   tools: [
