@@ -4,6 +4,10 @@
 @include custom-scrollbar(".skills");
 @include horizontal-scroll(".skills");
 
+.skills {
+  padding-bottom: 50px;
+  margin-bottom: 200px;
+}
 .skills img {
   width: 100px;
   margin: 10px 2px;
