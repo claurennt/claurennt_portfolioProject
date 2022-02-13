@@ -1,9 +1,5 @@
 import React, { Fragment } from "react";
-import Fade from "react-bootstrap/Fade";
-// import alien from "./assets/alien.png";
-// import github from "./assets/github.png";
-// import website from "./assets/website.png";
-// import heroku from "./assets/heroku.svg";
+
 import { projects } from "./data";
 import "./styles/Projects.scss";
 
