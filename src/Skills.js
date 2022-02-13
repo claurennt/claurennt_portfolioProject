@@ -1,6 +1,6 @@
 import React from "react";
 import { skills } from "./data";
-import ToggleButton from "./Components/ToggleButton";
+
 import Icon from "./Components/Icon";
 import "./styles/Skills.scss";
 
