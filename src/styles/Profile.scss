@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   font-family: $secondary-font;
-  margin: 2%;
+  margin: 3%;
   color: white;
 }
 
@@ -20,7 +20,7 @@ h2 {
 
 h1 {
   font-family: $primary-font;
-  font-size: 4vw;
+  font-size: 5vw;
   word-spacing: 10px;
   font-weight: 100;
   text-shadow: $text-shadow-title;
@@ -56,7 +56,7 @@ h2 {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 300px) {
   .profile {
     flex-direction: column;
   }

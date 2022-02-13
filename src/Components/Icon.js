@@ -1,8 +1,7 @@
-const Icon = ({ image, webP, jp2, jxr }) => (
+const Icon = ({ svg, jp2, jxr }) => (
   <picture>
-    {image && <img src={image} type="image/svg" />}
-    <source srcset={webP} type="image/webp" />
-    <source srcset={jp2} type="image/jp2" />
+    <source srcSet={svg} type="image/svg+xml" />
+    <source srcSet={jp2} type="image/jp2" />
     <img src={jxr} type="image/vnd.ms-photo" />
   </picture>
 );

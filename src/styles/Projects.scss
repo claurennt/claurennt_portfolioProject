@@ -2,18 +2,10 @@
 @import "customBootstrap.scss";
 
 @include custom-scrollbar(".projects");
-@include horizontal-scroll(".projects");
+@include scrollable-div(".projects");
 
 .projects {
   @include display-custom(row, center, "");
-}
-
-.projects > * {
-  float: none;
-  height: 90%;
-
-  display: inline-block;
-  zoom: 1;
 }
 
 .btn-primary {
@@ -33,7 +25,8 @@
   font-family: $primary-font;
   color: $neon-purple;
   background-color: black;
-  border: 1px solid $neon-purple;
+  border: 2px solid $neon-purple;
+  border-radius: 2%;
 }
 .project-name {
   font-family: $primary-font;

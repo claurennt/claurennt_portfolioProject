@@ -5,8 +5,10 @@ import todo from "./assets/todo.png";
 import bot from "./assets/bot.png";
 import optimist from "./assets/optimist.png";
 import hnClone from "./assets/hnClone.png";
+import reactsvg from "./assets/icons/react.svg";
 import react from "./assets/icons/react.jp2";
 import reactwp from "./assets/icons/react.webp";
+import htmlsvg from "./assets/icons/html5.svg";
 import html from "./assets/icons/html.jp2";
 import htmlwp from "./assets/icons/html.webp";
 import csssvg from "./assets/icons/css3.svg";
@@ -16,6 +18,7 @@ import expresssvg from "./assets/icons/express.svg";
 import express from "./assets/icons/express.jp2";
 import expresswp from "./assets/icons/express.webp";
 import node from "./assets/icons/node.jp2";
+import nodesvg from "./assets/icons/node.svg";
 import nodewp from "./assets/icons/node.webp";
 import mongodb from "./assets/icons/mongodb.jp2";
 import mondogbwp from "./assets/icons/mongodb.webp";
@@ -23,13 +26,16 @@ import mongoose from "./assets/icons/mongoose-.svg";
 import jssvg from "./assets/icons/js.svg";
 import js from "./assets/icons/js.jp2";
 import jswp from "./assets/icons/js.webp";
+import muisvg from "./assets/icons/muisvg.svg";
 import mui from "./assets/icons/mui.jp2";
 import muiwp from "./assets/icons/mui.webp";
 import bootstrapsvg from "./assets/icons/bootstrap.svg";
 import bootstrap from "./assets/icons/bootstrap.jp2";
 import bootstrapwp from "./assets/icons/bootstrap.webp";
+import sasssvg from "./assets/icons/sass.svg";
 import sass from "./assets/icons/sass.jp2";
 import sasswp from "./assets/icons/sass.webp";
+import postgresvg from "./assets/icons/postgresql.svg";
 import postgre from "./assets/icons/postgre.jp2";
 import postgrewb from "./assets/icons/postgre.webp";
 import csvg from "./assets/icons/c.svg";
@@ -109,39 +115,44 @@ const projects = [
 ];
 
 const skills = {
-  frontEnd: [
+  "front-end": [
     {
       name: "HTML",
+      svg: htmlsvg,
       jp2: html,
       webP: htmlwp,
     },
-    { name: "CSS", image: csssvg, jp2: css, webP: csswp },
-    { name: "Sass", jp2: sass, webP: sasswp },
+    { name: "CSS", svg: csssvg, jp2: css, webP: csswp },
+    { name: "Sass", svg: sasssvg, jp2: sass, webP: sasswp },
     {
       name: "Bootstrap",
-      image: bootstrapsvg,
+      svg: bootstrapsvg,
       jp2: bootstrap,
       webP: bootstrapwp,
     },
-    { name: "Material-UI", jp2: mui, webP: muiwp },
-    { name: "JavaScript", image: jssvg, jp2: js, webP: jswp },
-    { name: "React", jp2: react, webP: reactwp },
+    { name: "Material-UI", svg: muisvg, jp2: mui, webP: muiwp },
+    { name: "JavaScript", svg: jssvg, jp2: js, webP: jswp },
+    { name: "React", svg: reactsvg, jp2: react, webP: reactwp },
   ],
-  backEnd: [
+  "back-end": [
     {
       name: "NodeJS",
+      svg: nodesvg,
       jp2: node,
       webP: nodewp,
     },
-    { name: "ExpressJS", image: expresssvg, jp2: express, webP: expresswp },
-    { name: "PostgreSQL", jp2: postgre, webP: postgrewb },
+    { name: "ExpressJS", svg: expresssvg, jp2: express, webP: expresswp },
+
+    { name: "C", svg: csvg, jp2: c, webP: cwp },
+  ],
+  databases: [
+    { name: "PostgreSQL", svg: postgresvg, jp2: postgre, webP: postgrewb },
     { name: "MongoDB", jp2: mongodb, webP: mondogbwp },
-    { name: "mongoose", image: mongoose },
-    { name: "C", image: csvg, jp2: c, webP: cwp },
+    { name: "mongoose", svg: mongoose },
   ],
   tools: [
-    { name: "git", image: gitsvg, jp2: git, webP: gitwp },
-    { name: "GitHub", image: githubsvg, jp2: github, webP: githubwp },
+    { name: "git", svg: gitsvg, jp2: git, webP: gitwp },
+    { name: "GitHub", svg: githubsvg, jp2: github, webP: githubwp },
     { name: "npm", jp2: npm, webP: npmwp },
     { name: "Trello", jp2: trello, webP: trellowp },
   ],
