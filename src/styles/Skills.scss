@@ -2,16 +2,20 @@
 @import "customBootstrap.scss";
 
 @include custom-scrollbar(".skills");
-@include horizontal-scroll(".skills");
+@include scrollable-div(".skills");
 
-.skills img {
-  width: 100px;
-  margin: 10px 2px;
-}
+// .skills > * {
+//   margin: 100px 2px;
+// }
+
 .skill-name {
   color: white;
-  margin-top: 20px;
+  margin: 7px;
   font-family: $primary-font;
+}
+.icon-container {
+  margin: 0 auto;
+  width: 10vw;
 }
 .btn-primary {
   @include button-variant(

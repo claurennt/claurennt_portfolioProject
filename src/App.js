@@ -11,7 +11,9 @@ const App = () => {
   return (
     <div className="app">
       <Profile />
+      <h5 className="category">My Skills</h5>
       <Skills />
+      <h5 className="category">My Projects</h5>
       <Projects />
     </div>
   );
