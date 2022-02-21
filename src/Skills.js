@@ -23,6 +23,7 @@ const Skills = () => {
 
   return (
     <div id="skills" className="skills">
+      <h5 className="category">The skills I have acquired so far</h5>
       {displaySkills("front-end")}
       {displaySkills("back-end")}
       {displaySkills("databases")}

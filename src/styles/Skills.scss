@@ -3,19 +3,23 @@
 
 @include custom-scrollbar(".skills");
 @include scrollable-div(".skills");
+.skills > * {
+  margin: 100px 2px;
+}
 
-// .skills > * {
-//   margin: 100px 2px;
-// }
-
+.skills .category {
+  @include category-title;
+}
 .skill-name {
   color: white;
   margin: 7px;
   font-family: $primary-font;
+  font-size: 1.2rem;
 }
 .icon-container {
   margin: 0 auto;
-  width: 10vw;
+  width: 8vw;
+  padding: 0 20px;
 }
 .btn-primary {
   @include button-variant(
