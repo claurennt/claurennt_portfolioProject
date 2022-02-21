@@ -4,10 +4,9 @@
 @include custom-scrollbar(".projects");
 @include scrollable-div(".projects");
 
-.projects {
-  @include display-custom(row, center, "");
+.projects .category {
+  @include category-title;
 }
-
 .btn-primary {
   @include button-variant(
     black,
@@ -20,12 +19,12 @@
 .project-card-wrapper {
   @include display-custom(column, center, space-between);
   margin-top: 20px;
-  width: 360px;
-  height: 200px;
+  width: 20vw;
+  height: 15vh;
   font-family: $primary-font;
   color: $neon-purple;
   background-color: black;
-  border: 2px solid $neon-purple;
+
   border-radius: 2%;
 }
 .project-name {

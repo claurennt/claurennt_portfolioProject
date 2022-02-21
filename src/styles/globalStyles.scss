@@ -65,8 +65,9 @@ $text-shadow-title: 0.2vw 0.2vw 0px $neon-purple, 0.3vw 0.3vw 0px $neon-purple,
     overflow-x: scroll;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
+    flex-shrink: 0;
   }
-  #{$element} > * {
+  #{$element} > *:not(h5) {
     font-size: 0.7em;
     float: none;
     height: 90%;

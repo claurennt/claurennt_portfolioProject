@@ -5,6 +5,7 @@ import "./styles/Projects.scss";
 
 const Projects = () => (
   <div id="projects" className="projects">
+    <h5 className="category">The projects I am proud of</h5>
     {projects.map(({ image, name, github, website, ...rest }, index) => (
       <Fragment key={crypto.randomUUID()}>
         <div
